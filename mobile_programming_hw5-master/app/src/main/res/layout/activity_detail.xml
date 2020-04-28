@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".DetailActivity">
+
+
+    <ImageView
+        android:id="@+id/imageview"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginBottom="44dp"
+        android:background="@android:color/transparent"
+        android:scaleType="fitCenter"
+        app:layout_constraintBottom_toTopOf="@+id/infotext"
+        app:layout_constraintStart_toStartOf="@+id/infotext"
+        tools:srcCompat="@tools:sample/avatars" />
+
+    <TextView
+        android:id="@+id/infotext"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="42dp"
+        android:layout_marginBottom="52dp"
+        android:text="TextView"
+        app:layout_constraintBottom_toTopOf="@+id/seekbar"
+        app:layout_constraintStart_toStartOf="@+id/seekbar" />
+
+    <SeekBar
+        android:id="@+id/seekbar"
+        android:layout_width="0dp"
+        android:layout_height="46dp"
+        android:layout_marginStart="72dp"
+        android:layout_marginEnd="72dp"
+        android:layout_marginBottom="308dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id="@+id/tvleft"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="72dp"
+        android:layout_marginEnd="149dp"
+        android:text="TextView"
+        app:layout_constraintEnd_toStartOf="@+id/stopbutton"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/seekbar" />
+
+    <TextView
+        android:id="@+id/tvright"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="TextView"
+        app:layout_constraintStart_toStartOf="@+id/stopbutton"
+        app:layout_constraintTop_toBottomOf="@+id/seekbar" />
+
+    <ImageButton
+        android:id="@+id/playbutton"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginEnd="187dp"
+        android:background="@android:color/transparent"
+        android:scaleType="fitCenter"
+        app:layout_constraintBottom_toBottomOf="@+id/stopbutton"
+        app:layout_constraintEnd_toStartOf="@+id/stopbutton"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tvleft"
+        app:srcCompat="@drawable/start" />
+
+    <ImageButton
+        android:id="@+id/stopbutton"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginTop="17dp"
+        android:layout_marginEnd="43dp"
+        android:layout_marginBottom="15dp"
+        android:background="@android:color/transparent"
+        android:scaleType="fitCenter"
+        app:layout_constraintBottom_toTopOf="@+id/goodbutton"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/tvleft"
+        app:layout_constraintTop_toTopOf="@+id/tvright"
+        app:srcCompat="@drawable/stop" />
+
+    <ImageButton
+        android:id="@+id/goodbutton"
+        android:layout_width="129dp"
+        android:layout_height="106dp"
+        android:layout_marginStart="97dp"
+        android:layout_marginTop="92dp"
+        android:layout_marginEnd="97dp"
+        android:layout_marginBottom="91dp"
+        android:background="@android:color/transparent"
+        android:scaleType="fitCenter"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="@+id/tvright"
+        app:layout_constraintStart_toStartOf="@+id/playbutton"
+        app:layout_constraintTop_toBottomOf="@+id/tvleft"
+        app:srcCompat="@drawable/good" />
+
+    <TextView
+        android:id="@+id/likecounttext"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="26dp"
+        android:layout_marginTop="7dp"
+        android:text="TextView"
+        app:layout_constraintStart_toStartOf="@+id/goodbutton"
+        app:layout_constraintTop_toBottomOf="@+id/goodbutton" />
+</android.support.constraint.ConstraintLayout>
